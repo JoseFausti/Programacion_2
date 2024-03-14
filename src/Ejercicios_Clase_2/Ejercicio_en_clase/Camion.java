@@ -19,7 +19,7 @@ public class Camion extends Vehiculo{
     }
 
     @Override
-    public void caracteristicas() {
+    protected void caracteristicas() {
         System.out.println("Dueño: " + this.getDuenio());
         System.out.println("Puertas: " + this.getPuertas());
         System.out.println("Ruedas: " + this.getRuedas());

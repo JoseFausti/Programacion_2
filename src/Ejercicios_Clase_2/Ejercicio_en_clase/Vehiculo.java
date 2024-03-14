@@ -36,5 +36,5 @@ public abstract class Vehiculo {
     }
 
 
-    public abstract void caracteristicas();
+    protected abstract void caracteristicas();
 }
