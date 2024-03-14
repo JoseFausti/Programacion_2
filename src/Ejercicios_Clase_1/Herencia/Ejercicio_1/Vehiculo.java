@@ -1,6 +1,6 @@
 package Ejercicios_Clase_1.Herencia.Ejercicio_1;
 
-public class Vehiculo {
+public abstract class Vehiculo {
     String color;
     int ruedas;
 

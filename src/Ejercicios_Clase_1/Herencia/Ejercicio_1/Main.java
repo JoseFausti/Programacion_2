@@ -7,7 +7,6 @@ public class Main {
 
 
         // Creaion de instancias
-        Vehiculo vehiculo = new Vehiculo("Rojo", 4);
         Coche coche = new Coche("Verde", 4, 200, 1200);
         Bicicleta bicicleta = new Bicicleta("Azul", 2, "Urbana");
         Camioneta camioneta = new Camioneta("Rojo",4,180, 1800, 1500);
@@ -17,7 +16,6 @@ public class Main {
         ArrayList<Vehiculo> listaVehiculos = new ArrayList<>();
 
         // Añadiendo los objetos a la lista
-        listaVehiculos.add(vehiculo);
         listaVehiculos.add(coche);
         listaVehiculos.add(bicicleta);
         listaVehiculos.add(camioneta);
