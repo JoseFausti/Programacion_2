@@ -1,8 +1,10 @@
 package Ejercicios_Clase_3.Ejercicio_en_clase;
-// Constructor
+
 public class Directivo extends Empleado{
     //Parametros
     private String titulo;
+
+    // Constructor
     public Directivo(String nombre,String titulo){
         super(nombre);
         this.titulo = titulo;
