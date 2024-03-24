@@ -46,11 +46,9 @@ public class Cuenta {
             System.out.println("Fondos insuficientes.");
         }
     }
-    public void CalcularInteres(){
+    private void CalcularInteres(){
         float interesMensual = tasaAnual / 12;
-        System.out.println("Interes Mensual: " + interesMensual);
-        this.saldo += interesMensual;
-        System.out.println("Saldo: $" + saldo);
+        this.saldo *= (1 + interesMensual / 100);
     }
     public void ExtractoMensual(){
         float comisionMensual = comisionAnual / 12;
