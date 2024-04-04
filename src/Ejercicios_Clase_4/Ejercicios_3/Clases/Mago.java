@@ -20,9 +20,8 @@ public class Mago extends PersonajeBase {
         }
 
         // Actualizar la vida del objetivo
-        objetivo.recibirDanio(damage);
-
-        return defender(damage);
+        objetivo.recibirDanio(defender(damage)); //Defensa automatica después del ataque
+        return 0;
     }
 
     // Método para atacar (copia del método original para mantener compatibilidad)
@@ -34,8 +33,7 @@ public class Mago extends PersonajeBase {
     // Método para defender
     @Override
     public int defender(int danio) {
-        // El mago tiene defensa mágica
-        int defensaMagica = 5; // Ejemplo: Defensa mágica del mago
+        int defensaMagica = 8; // Defensa mágica del mago
         return danio - defensaMagica; // Ajustar daño basado en la defensa mágica
     }
 }

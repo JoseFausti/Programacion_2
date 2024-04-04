@@ -14,12 +14,29 @@ public abstract class PersonajeBase implements Personaje {
         this.nombre = nombre;
     }
 
-    //Metodos
-    @Override
-    public int defender(int danio) {
-        return 0;
+    //Getter y Setter
+    public int getNivel() {
+        return nivel;
     }
-    //Método para recibir daño
+    public void setNivel(int nivel) {
+        this.nivel = nivel;
+    }
+
+    public int getVida() {
+        return vida;
+    }
+    public void setVida(int vida) {
+        this.vida = vida;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    //Metodos
     @Override
     public void recibirDanio(int danio) {
         vida -= danio;
@@ -27,5 +44,8 @@ public abstract class PersonajeBase implements Personaje {
             vida = 0;
         }
     }
-
+    @Override
+    public int defender(int danio) {
+        return 0;
+    }
 }

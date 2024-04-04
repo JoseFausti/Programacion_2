@@ -20,9 +20,8 @@ public class Guerrero extends PersonajeBase {
         }
 
         // Actualizar la vida del objetivo
-        objetivo.recibirDanio(damage);
-
-        return defender(damage);
+        objetivo.recibirDanio(defender(damage)); //Defensa automatica después del ataque
+        return 0;
     }
 
     // Método para atacar (copia del método original para mantener compatibilidad)
@@ -34,8 +33,7 @@ public class Guerrero extends PersonajeBase {
     // Método para defender
     @Override
     public int defender(int danio) {
-        // El guerrero tiene armadura
-        int armadura = 8; // Ejemplo: Valor de armadura del guerrero
+        int armadura = 8; // Valor de armadura del guerrero
         return danio - armadura; // Ajustar daño basado en la armadura
     }
 }
