@@ -25,7 +25,7 @@ public class Circulo implements Dibujable, Figura {
 
     @Override
     public void Dibujar() {
-        System.out.println("Se ha dibujado en el Cuadrado");
+        System.out.println("Se ha dibujado en el Circulo");
     }
 
 }
