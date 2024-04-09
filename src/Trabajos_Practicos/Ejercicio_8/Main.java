@@ -11,8 +11,8 @@ public class Main {
         gerente2.realizarActividad();
 
         // Crear instancias de Trabajador
-        Trabajador trabajador1 = new Trabajador("José", 25, 3000, true, 10);
-        Trabajador trabajador2 = new Trabajador("Joaquín", 30, 3500, false, 8);
+        Trabajador trabajador1 = new Trabajador("Jose", 25, 3000, true, 10);
+        Trabajador trabajador2 = new Trabajador("Joaquin", 30, 3500, false, 8);
 
         // Llamar al método producirEnArea() en cada trabajador
         trabajador1.producirEnArea();
