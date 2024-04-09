@@ -44,4 +44,13 @@ public abstract class Empleado {
     public void setCapacidadTrabajo(boolean capacidadTrabajo) {
         this.capacidadTrabajo = capacidadTrabajo;
     }
+
+    // Metodo
+    public void Informacion(){
+        System.out.println(
+                "Nombre: " + this.getNombre() +
+                "Edad: " + this.getEdad() +
+                "Salario: " + this.getSalario()
+        );
+    }
 }
