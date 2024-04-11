@@ -1,4 +1,4 @@
-package
+package Trabajos_Practicos.Trabajo_Practico_2.Clases.Ejercicio_1;
 
 public class Bird extends Animal {
 

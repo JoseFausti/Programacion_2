@@ -1,3 +1,5 @@
+package Trabajos_Practicos.Trabajo_Practico_2.Clases.Ejercicio_1;
+
 public class Cat extends Animal {
 
 	private String race;
