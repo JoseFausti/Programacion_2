@@ -8,10 +8,8 @@ public class Estudiantes  {
 	private static int id = 0;
 
 	//Constructor
-	public Estudiantes (){}
-	public Estudiantes(String nombre, Universidad universidad) {
+	public Estudiantes(String nombre) {
 		this.nombre = nombre;
-		this.universidad = universidad;
 		id++;
 	}
 
@@ -35,9 +33,10 @@ public class Estudiantes  {
 	}
 
 	//Metodos
-	public void CrearEstudiantes (){
-		new Estudiantes();
+	public void CrearEstudiantes (String nombre){
+		new Estudiantes(nombre);
 		id++;
 	}
+
 
 }

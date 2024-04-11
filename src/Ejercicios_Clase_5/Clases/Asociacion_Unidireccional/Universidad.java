@@ -6,7 +6,6 @@ public class Universidad  {
 	private static int id = 0;
 
 	//Constructor
-	public Universidad (){}
 	public Universidad(String nombre) {
 		this.nombre = nombre;
 		id++;
@@ -29,8 +28,8 @@ public class Universidad  {
 		setNombre(nuevaUniversidad);
 	}
 
-	public void CrearUniversidad(){
-		new Universidad();
+	public void CrearUniversidad(String nombre){
+		new Universidad(nombre);
 		id++;
 	}
 
