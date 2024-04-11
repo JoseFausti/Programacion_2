@@ -17,6 +17,23 @@ public abstract class Animal {
 		this.price = price;
 	}
 
+	//Getters
+	public int getAge() {
+		return age;
+	}
+
+	public String getAnimalType() {
+		return animalType;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public double getPrice() {
+		return price;
+	}
+
 	//Methods
 	public void feedAnimal(String name){
 

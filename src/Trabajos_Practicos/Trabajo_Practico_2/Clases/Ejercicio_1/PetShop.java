@@ -1,41 +1,40 @@
-
-
-/**
- * @author Hola
- * @version 1.0
- * @created 11-abr.-2024 09:53:55
- */
+package Trabajos_Practicos.Trabajo_Practico_2.Clases.Ejercicio_1;
 public class PetShop {
 
+	//Attributes
 	private Animal animals[];
-	public Animal m_Animal;
+	private int i;
 
-	public PetShop(){
-
+	//Constructor
+	public PetShop(Animal[] animals) {
+		this.animals = animals;
+		this.i = animals.length;
 	}
 
-	public void finalize() throws Throwable {
-
+	//Getter and Setter
+	public Animal[] getAnimals() {
+		return animals;
+	}
+	public void setAnimals(Animal[] animals) {
+		this.animals = animals;
 	}
 
-	/**
-	 * 
-	 * @param animal
-	 */
+	//Methods
 	public void addAnimal(Animal animal){
-
+		this.animals[i] = animal;
+		i++;
 	}
 
-	/**
-	 * 
-	 * @param name
-	 */
-	public void feedAnimal(String name){
-
+	public void feedAnimal(String name,int animalList){
+		Animal animal = animals[animalList];
+		System.out.println("El " + animal.getAnimalType() + ": '" + name + "' está comiendo.");
 	}
 
 	public void listAnimals(){
-
+		System.out.println("Lista de Animales:");
+		for (Animal animal: animals) {
+			System.out.println(animal);
+		}
 	}
 
 	public String setAnimal(){
