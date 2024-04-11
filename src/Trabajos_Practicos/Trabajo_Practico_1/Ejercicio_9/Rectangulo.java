@@ -1,4 +1,4 @@
-package Trabajos_Practicos.Ejercicio_9;
+package Trabajos_Practicos.Trabajo_Practico_1.Ejercicio_9;
 
 public class Rectangulo extends FiguraGeometrica{
 

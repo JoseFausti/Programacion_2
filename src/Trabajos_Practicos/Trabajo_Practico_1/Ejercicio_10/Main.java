@@ -1,4 +1,4 @@
-package Trabajos_Practicos.Ejercicio_10;
+package Trabajos_Practicos.Trabajo_Practico_1.Ejercicio_10;
 
 public class Main {
     public static void main(String[] args) {
