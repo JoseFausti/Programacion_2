@@ -8,7 +8,7 @@ public class Persona {
 	//Atributos
 	private List<Libro> libros = new ArrayList<>();
 	private String nombre;
-	private static int id = 0;
+	private static int id = 1;
 
 	//Constructor
 	public Persona(String nombre) {

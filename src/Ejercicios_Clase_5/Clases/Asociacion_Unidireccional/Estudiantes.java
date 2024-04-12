@@ -5,7 +5,7 @@ public class Estudiantes  {
 	//Atributos
 	private String nombre;
 	public Universidad  universidad;
-	private static int id = 0;
+	private static int id = 1;
 
 	//Constructor
 	public Estudiantes(String nombre) {

@@ -3,7 +3,7 @@ public class Universidad  {
 
 	//Atributos
 	private String nombre;
-	private static int id = 0;
+	private static int id = 1;
 
 	//Constructor
 	public Universidad(String nombre) {
