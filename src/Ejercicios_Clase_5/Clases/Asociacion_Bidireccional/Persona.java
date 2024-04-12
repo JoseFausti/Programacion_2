@@ -8,12 +8,14 @@ public class Persona {
 	//Atributos
 	private List<Libro> libros = new ArrayList<>();
 	private String nombre;
-	private static int id = 1;
+	private static int contador = 0;
+	private int id;
 
 	//Constructor
 	public Persona(String nombre) {
 		this.nombre = nombre;
-		id++;
+		contador ++;
+		id = contador;
 	}
 
 	//Getter y Setter
@@ -32,7 +34,7 @@ public class Persona {
 		this.nombre = nombre;
 	}
 
-	public static int getId() {
+	public int getId() {
 		return id;
 	}
 
@@ -43,7 +45,6 @@ public class Persona {
 
 	public void CrearPersona(String nombre){
 		new Persona(nombre);
-		id++;
 	}
 
 	public void MostrarListaLibros(){

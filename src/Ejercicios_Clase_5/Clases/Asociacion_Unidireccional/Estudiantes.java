@@ -5,12 +5,14 @@ public class Estudiantes  {
 	//Atributos
 	private String nombre;
 	public Universidad  universidad;
-	private static int id = 1;
+	private static int contador = 0;
+	private int id;
 
 	//Constructor
 	public Estudiantes(String nombre) {
 		this.nombre = nombre;
-		id++;
+		contador ++;
+		id = contador;
 	}
 
 	//Getter y Setter
@@ -28,14 +30,13 @@ public class Estudiantes  {
 		this.universidad = universidad;
 	}
 
-	public static int getId() {
+	public int getId() {
 		return id;
 	}
 
 	//Metodos
 	public void CrearEstudiantes (String nombre){
 		new Estudiantes(nombre);
-		id++;
 	}
 
 

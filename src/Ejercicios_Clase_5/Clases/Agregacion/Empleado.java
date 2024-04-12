@@ -4,13 +4,15 @@ public class Empleado {
 	//Atributos
 	private String cargo;
 	private String nombre;
-	private static int id = 1;
+	private static int contador = 0;
+	private int id;
 
 	//Constructor
 	public Empleado(String cargo, String nombre) {
 		this.cargo = cargo;
 		this.nombre = nombre;
-		id++;
+		contador ++;
+		id = contador;
 	}
 
 	//Getter y Setter
@@ -28,9 +30,12 @@ public class Empleado {
 		this.nombre = nombre;
 	}
 
+	public int getId() {
+		return id;
+	}
+
 	public void CrearEmpleado(String cargo, String nombre){
 		new Empleado(cargo,nombre);
-		id++;
 	}
 
 }

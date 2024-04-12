@@ -3,12 +3,14 @@ public class Universidad  {
 
 	//Atributos
 	private String nombre;
-	private static int id = 1;
+	private static int contador = 0;
+	private int id;
 
 	//Constructor
 	public Universidad(String nombre) {
 		this.nombre = nombre;
-		id++;
+		contador ++;
+		id = contador;
 	}
 
 	//Getter y Setter
@@ -19,7 +21,7 @@ public class Universidad  {
 		this.nombre = nombre;
 	}
 
-	public static int getId() {
+	public int getId() {
 		return id;
 	}
 
@@ -30,7 +32,6 @@ public class Universidad  {
 
 	public void CrearUniversidad(String nombre){
 		new Universidad(nombre);
-		id++;
 	}
 
 	public String VerUniversidad(){
