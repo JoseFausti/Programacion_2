@@ -8,8 +8,8 @@ public class Bird extends Animal {
 
 	//Constructor
 	public Bird(){}
-	public Bird(int age, String animalType, String name, double price, String species, boolean talk) {
-		super(age, animalType, name, price);
+	public Bird( String name,int age, String animalType, double price, String species, boolean talk) {
+		super(name,age, animalType, price);
 		this.species = species;
 		this.talk = talk;
 	}
@@ -30,11 +30,16 @@ public class Bird extends Animal {
 	}
 
 	//Methods
-	public void feedAnimal(String name){
-
-	}
 	@Override
 	public String toString() {
-		return super.toString();
+		if (talk){
+			return (super.toString() +
+					"Especie: " + species +"\n" +
+					"Habla: SI" );
+		}else {
+			return (super.toString() +
+					"Especie: " + species +"\n" +
+					"Habla: NO" );
+		}
 	}
 }
