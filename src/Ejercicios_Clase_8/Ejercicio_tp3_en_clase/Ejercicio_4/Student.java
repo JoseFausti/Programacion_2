@@ -1,6 +1,6 @@
 package Ejercicios_Clase_8.Ejercicio_tp3_en_clase.Ejercicio_4;
 
-class Student {
+public class Student {
     private String name;
     private int age;
     private double grade;

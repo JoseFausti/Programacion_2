@@ -1,5 +1,6 @@
 package Trabajos_Practicos.Trabajo_Practico_3.Clases.Ejercicio_4;
-class Student {
+
+public class Student {
     private String name;
     private int age;
     private double grade;
