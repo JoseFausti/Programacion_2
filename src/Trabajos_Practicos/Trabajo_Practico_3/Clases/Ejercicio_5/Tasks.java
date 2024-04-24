@@ -1,6 +1,6 @@
 package Trabajos_Practicos.Trabajo_Practico_3.Clases.Ejercicio_5;
 
-class Tasks {
+public class Tasks {
     private String description;
     private int priority;
 

@@ -5,7 +5,7 @@ import java.util.Comparator;
 import java.util.Iterator;
 import java.util.List;
 
-class TasksList implements Iterable<Tasks> {
+public class TasksList implements Iterable<Tasks> {
     private List<Tasks> tasks;
 
     public TasksList() {
