@@ -1,0 +1,9 @@
+{
+    "Persona":{
+        "nombre":"",
+        "apellido":"",
+        "telefono":"",
+        "email":"",
+        "fechaNacimiento": ""
+    }
+}
