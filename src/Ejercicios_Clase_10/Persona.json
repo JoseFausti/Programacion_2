@@ -4,6 +4,6 @@
         "apellido":"",
         "telefono":"",
         "email":"",
-        "fechaNacimiento": ""
+        "fechaNacimiento": "LocalDate"
     }
 }
