@@ -1,3 +1,5 @@
 {
-  "tipoEmpleado": "TipoEmpleado"
+  "Empleado": {
+    "tipoEmpleado": "TipoEmpleado"
+  }
 }
